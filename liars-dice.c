@@ -28,7 +28,7 @@ int main()
 {
    int rounds;
    char response;
-   int round = 0;
+   int round = 1;
    startGame();                        //Game Title
    printf("How many rounds?\n");       //Enter the number of rounds
    scanf("%d", &rounds);
@@ -36,7 +36,7 @@ int main()
 
    while (rounds > 0)                        //The rounds variable decrements after each round, so the game goes on as long as rounds > 0
    {
-      printf("### Round %d ###", round + 1);
+      printf("### Round %d ###", round);
 
       playerOneMove();                       //Player one makes a move
       int truth1 = rollDice();               //The sum of the dice is stored
